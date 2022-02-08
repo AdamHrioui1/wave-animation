@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave__container {
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border: 1px solid #000;
+}
+
+.cube {
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+
+    background-color: #000;
+    border-radius: 50%;
+
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
+}
+
+.cube.grow {
+    transform: scale(2);
+}
